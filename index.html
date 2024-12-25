@@ -19,7 +19,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#ride">Ride</a></li>
             <li><a href="#services">Servies</a></li>
-            <li><a href="about">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#reviews">Reviews</a></li>
         </ul>
         <div class="header-btn">
@@ -243,6 +243,52 @@
             <a href="#"><i class='bx bxl-instagram' ></i></a>
         </div>
     </div>
+    <!-- Pop-up Form -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <h2>Book a Car</h2>
+        <form>
+            <div class="input-box">
+                <span>Full Name</span>
+                <input type="text" placeholder="Enter your full name">
+            </div>
+            <div class="input-box">
+                <span>Email</span>
+                <input type="email" placeholder="Enter your email">
+            </div>
+            <div class="input-box">
+                <span>Phone Number</span>
+                <input type="text" placeholder="Enter your phone number">
+            </div>
+            <div class="input-box">
+                <span>Pick-Up Date</span>
+                <input type="date">
+            </div>
+            <div class="input-box">
+                <span>Return Date</span>
+                <input type="date">
+            </div>
+            <input type="submit" value="Submit" class="btn">
+        </form>
+    </div>
+</div>
+<form action="/submit-form" method="POST">
+    <div class="input-box">
+        <span>Location</span>
+        <input type="search" name="location" placeholder="Search Places">
+    </div>
+    <div class="input-box">
+        <span>Pick-Up Date</span>
+        <input type="date" name="pickup_date">
+    </div>
+    <div class="input-box">
+        <span>Return Date</span>
+        <input type="date" name="return_date">
+    </div>
+    <input type="submit" class="btn">
+</form>
+
 
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
